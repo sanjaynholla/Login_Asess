@@ -6,6 +6,10 @@ const ImagesSchema = mongoose.Schema(
             type: String,
             required: [true, 'Uploaded By is Required!']
         },
+        image_type: {
+            type: String,
+            required: [true, 'Image Type is Required!']
+        },
         image_path: {
             type: String,
             required: [true, 'Image Path is required!']

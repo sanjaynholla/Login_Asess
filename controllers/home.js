@@ -47,12 +47,16 @@ const getAllImages = async (req, res) => {
 
 const storeImage = async (req, res) => {
     try {
+        if(req.fileValidationError){
+            return res.status(401).json({msg: `Invalid Image Type.. Only jpg/png/jpeg Allowed to Upload`});
+        }
         const user_id = req.user.userId;
         const isAdmin = req.user.isAdmin;
         if(isAdmin === true){
             const storeImageDetails = {
                 uploaded_by: user_id,
-                image_path: '/public/images/'+req.file.name 
+                image_path: '/public/images/'+req.file.filename, 
+                image_type: req.file.mimetype
             }
             const storeImages = await Images.create(storeImageDetails);
             res.status(201).json({storeImages})
