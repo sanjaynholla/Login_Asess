@@ -29,6 +29,6 @@ JWT_SECRET_KEY = p3s6v9y$B&E)H@McQfTjWnZr4t7w!z%C // This value can be changed
 **db**
 1. connect.js - This file helps in connecting to mongodb database which uses MONGO_URI of .env file.
 
-**Other **
+**Other**
 Please download mongodb collections and postman collections which are shared in mail. Import them to respective platforms to test apis.
 For better access of apis in postman, i have added Global Variables URL and accessToken.
