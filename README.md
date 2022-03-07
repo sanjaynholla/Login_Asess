@@ -4,10 +4,10 @@
 
 **.env**
 Please create a .env file which involves following keys and assign values
-PORT = 3000 // This value can be changed
-MONGO_URI = <Mongo_uri to connect to db> // Replace your mongo url to connect as mongodb is used
-ENCRYPT_SECRET_KEY = p3s6v9y$B&E)H@McQfTjWnZr4t7w!z%C // This value can be changed
-JWT_SECRET_KEY = p3s6v9y$B&E)H@McQfTjWnZr4t7w!z%C // This value can be changed
+1. PORT = 3000 // This value can be changed
+2. MONGO_URI = <Mongo_uri to connect to db> // Replace your mongo url to connect as mongodb is used
+3. ENCRYPT_SECRET_KEY = p3s6v9y$B&E)H@McQfTjWnZr4t7w!z%C // This value can be changed
+4. JWT_SECRET_KEY = p3s6v9y$B&E)H@McQfTjWnZr4t7w!z%C // This value can be changed
 
 
 **Routes**
