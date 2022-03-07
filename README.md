@@ -26,7 +26,7 @@ Please create a .env file which involves following keys and assign values
 1. home.js - This controller involves functions for user, logout, storing images and fetching all the images for users
 2. user.js - This controller involves functions for registering user and logging in users.
 
-**db**
+**DB**
 1. connect.js - This file helps in connecting to mongodb database which uses MONGO_URI of .env file.
 
 **Other**
